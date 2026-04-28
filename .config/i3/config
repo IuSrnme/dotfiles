@@ -28,7 +28,7 @@ exec --no-startup-id fcitx5 -d
 
 # --- Always Restart ---
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-exec_always --no-startup-id feh --bg-scale ~/Downloads/thumb-1920-1296640.jpg
+exec_always --no-startup-id feh --bg-scale ~/Picturess/Wallpapers/thumb-1920-1296640.jpg
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # --- Appearance ---
@@ -124,14 +124,14 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit i3?' -B 'Yes' 'i3-msg exit'"
 
-# --- Keybind: Brightness---
+# --- Keybind: Brightness ---
 bindsym $mod+F1 exec ddcutil setvcp 10 + 10
 bindsym $mod+F2 exec ddcutil setvcp 10 - 10
 
-# --- Keybind: Lockscreen---
+# --- Keybind: Lockscreen ---
 bindsym $mod+Shift+x exec i3lock -c 000000 --ring-color=E87FA0 --keyhl-color=F7AABC --bshl-color=E94B67 --inside-color=00000000 --separator-color=00000000
 
-# --- Keybind: Scratchpad---
+# --- Keybind: Scratchpad ---
 exec --no-startup-id kitty --title scratchpad
 for_window [title="scratchpad"] move scratchpad
 bindsym $mod+minus [title="scratchpad"] scratchpad show
