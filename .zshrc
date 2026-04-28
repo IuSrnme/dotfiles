@@ -46,6 +46,10 @@ export FZF_DEFAULT_OPTS="
   --border rounded
   --height 40%"
 
+# fzf keybindings
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
 # Japanese
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
