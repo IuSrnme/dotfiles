@@ -3,6 +3,8 @@
 
 DOTFILES=~/dotfiles
 
+mkdir -p $DOTFILES/.config/{i3,kitty,picom,polybar,rofi,dunst,fastfetch,nvim,btop,yazi/flavors,mpv,fontconfig,gtk-3.0}
+
 # Copy configs
 cp ~/.config/i3/config $DOTFILES/.config/i3/
 cp ~/.config/kitty/kitty.conf $DOTFILES/.config/kitty/
@@ -18,6 +20,12 @@ cp ~/.config/btop/btop.conf $DOTFILES/.config/btop/
 cp -r ~/.config/btop/themes/ $DOTFILES/.config/btop/
 cp ~/.zshrc $DOTFILES/
 cp ~/.xprofile $DOTFILES/
+cp ~/.config/yazi/yazi.toml $DOTFILES/.config/yazi/
+cp -r ~/.config/yazi/flavors/ $DOTFILES/.config/yazi/
+cp ~/.config/yazi/theme.toml $DOTFILES/.config/yazi/
+cp ~/.config/mpv/mpv.conf $DOTFILES/.config/mpv/
+cp ~/.config/fontconfig/fonts.conf $DOTFILES/.config/fontconfig/
+cp ~/.config/gtk-3.0/settings.ini $DOTFILES/.config/gtk-3.0/
 
 # Push to github
 cd $DOTFILES

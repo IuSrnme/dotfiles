@@ -1,0 +1,75 @@
+[mgr]
+cwd = { fg = "#F7AABC" }
+find_keyword = { fg = "#F0C060", bold = true }
+find_position = { fg = "#E87FA0", bold = true }
+marker_copied = { fg = "#7EB8D4", bg = "#7EB8D4" }
+marker_cut = { fg = "#E94B67", bg = "#E94B67" }
+marker_marked = { fg = "#F0C060", bg = "#F0C060" }
+marker_selected = { fg = "#E87FA0", bg = "#E87FA0" }
+border_symbol = "│"
+border_style = { fg = "#2d2d2d" }
+
+[tabs]
+active = { fg = "#000000", bg = "#E87FA0", bold = true }
+inactive = { fg = "#F7AABC", bg = "#1a1a1a" }
+
+[mode]
+normal_main = { fg = "#000000", bg = "#E87FA0", bold = true }
+normal_alt = { fg = "#E87FA0", bg = "#1a1a1a" }
+select_main = { fg = "#000000", bg = "#F0C060", bold = true }
+select_alt = { fg = "#F0C060", bg = "#1a1a1a" }
+unset_main = { fg = "#000000", bg = "#7EB8D4", bold = true }
+unset_alt = { fg = "#7EB8D4", bg = "#1a1a1a" }
+
+[status]
+perm_type = { fg = "#7EB8D4" }
+perm_read = { fg = "#F0C060" }
+perm_write = { fg = "#E94B67" }
+perm_exec = { fg = "#E87FA0" }
+perm_sep = { fg = "#2d2d2d" }
+progress_label = { fg = "#F7AABC", bold = true }
+progress_normal = { fg = "#E87FA0", bg = "#1a1a1a" }
+progress_error = { fg = "#E94B67", bg = "#1a1a1a" }
+
+[which]
+cols = 3
+mask = { bg = "#000000" }
+cand = { fg = "#E87FA0" }
+rest = { fg = "#2d2d2d" }
+desc = { fg = "#F7AABC" }
+separator = " → "
+separator_style = { fg = "#2d2d2d" }
+
+[input]
+border = { fg = "#E87FA0" }
+title = { fg = "#F7AABC" }
+value = { fg = "#F7AABC" }
+selected = { reversed = true }
+
+[confirm]
+border = { fg = "#E87FA0" }
+title = { fg = "#F7AABC" }
+
+[pick]
+border = { fg = "#E87FA0" }
+active = { fg = "#000000", bg = "#E87FA0" }
+inactive = { fg = "#F7AABC" }
+
+[tasks]
+border = { fg = "#E87FA0" }
+title = { fg = "#F7AABC" }
+
+[notify]
+title_info = { fg = "#7EB8D4" }
+title_warn = { fg = "#F0C060" }
+title_error = { fg = "#E94B67" }
+
+[filetype]
+rules = [
+  { mime = "image/*", fg = "#E87FA0" },
+  { mime = "{audio,video}/*", fg = "#F0C060" },
+  { mime = "text/*", fg = "#F7AABC" },
+  { mime = "inode/empty", fg = "#2d2d2d" },
+  { url = "*", is = "orphan", fg = "#E94B67" },
+  { url = "*/", fg = "#7EB8D4" },
+]
