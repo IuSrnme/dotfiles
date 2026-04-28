@@ -26,6 +26,7 @@ cp ~/.config/yazi/theme.toml $DOTFILES/.config/yazi/
 cp ~/.config/mpv/mpv.conf $DOTFILES/.config/mpv/
 cp ~/.config/fontconfig/fonts.conf $DOTFILES/.config/fontconfig/
 cp ~/.config/gtk-3.0/settings.ini $DOTFILES/.config/gtk-3.0/
+cp ~/.config/fastfetch/bocchi.txt $DOTFILES/.config/fastfetch
 
 # Push to github
 cd $DOTFILES
