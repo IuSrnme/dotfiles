@@ -28,7 +28,7 @@ exec --no-startup-id fcitx5 -d
 
 # --- Always Restart ---
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-exec_always --no-startup-id feh --bg-scale ~/Picturess/Wallpapers/thumb-1920-1296640.jpg
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/thumb-1920-1296640.jpg
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # --- Appearance ---
