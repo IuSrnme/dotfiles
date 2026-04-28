@@ -22,6 +22,9 @@ exec --no-startup-id /usr/lib/xdg-desktop-portal-gtk
 exec --no-startup-id discord
 exec --no-startup-id firefox
 
+# --- Input Method ---
+exec --no-startup-id fcitx5 -d
+
 # --- Always Restart ---
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id feh --bg-scale ~/Downloads/thumb-1920-1296640.jpg

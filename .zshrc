@@ -45,3 +45,8 @@ export FZF_DEFAULT_OPTS="
   --color=marker:#F7AABC,fg+:#F7AABC,prompt:#E87FA0,hl+:#E94B67
   --border rounded
   --height 40%"
+
+# Japanese
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx

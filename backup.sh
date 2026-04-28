@@ -17,6 +17,7 @@ cp -r ~/.config/nvim/ $DOTFILES/.config/
 cp ~/.config/btop/btop.conf $DOTFILES/.config/btop/
 cp -r ~/.config/btop/themes/ $DOTFILES/.config/btop/
 cp ~/.zshrc $DOTFILES/
+cp ~/.xprofile $DOTFILES/
 
 # Push to github
 cd $DOTFILES
