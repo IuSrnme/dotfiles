@@ -10,8 +10,6 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Aliases
-alias ls='ls --color=auto'
-alias ll='ls -lah --color=auto'
 alias grep='grep --color=auto'
 alias update='sudo pacman -Syu'
 alias cleanup='sudo pacman -Sc'
@@ -32,7 +30,6 @@ alias ls='eza --icons'
 alias ll='eza -lah --icons'
 alias lt='eza --tree --icons'
 alias cat='bat'
-alias cd='z'
 alias f='yazi'
 
 # Initialize zoxide
@@ -50,7 +47,5 @@ export FZF_DEFAULT_OPTS="
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
-# Japanese
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx
+# Sudoedit
+export SUDO_EDITOR=nvim

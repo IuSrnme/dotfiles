@@ -1,0 +1,14 @@
+[StreamInputs]
+inputDevice=alsa_input.usb-HP__Inc_HyperX_SoloCast-00.analog-stereo
+plugins=rnnoise#0
+useDefaultInputDevice=false
+visiblePage=pluginsPage
+visiblePlugin=rnnoise#0
+
+[StreamOutputs]
+outputDevice=alsa_output.usb-Burr-Brown_from_TI_USB_Audio_CODEC-00.analog-stereo-output
+
+[Window]
+height=1020
+visiblePage=inputPage
+width=1884

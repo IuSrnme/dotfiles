@@ -10,7 +10,7 @@ tiling_drag modifier titlebar
 
 # --- Autostart ---
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 000000 --ring-color=E87FA0 --keyhl-color=F7AABC --bshl-color=E94B67 --inside-color=00000000 --separator-color=00000000 --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id easyeffects --gapplication-service
 exec --no-startup-id xsetroot -cursor_name left_ptr
@@ -18,6 +18,7 @@ exec --no-startup-id dunst
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 exec --no-startup-id /usr/lib/xdg-desktop-portal-gtk
 exec --no-startup-id copyq
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # --- Startup Apps ---
 exec --no-startup-id discord
@@ -29,7 +30,7 @@ exec --no-startup-id fcitx5 -d
 # --- Always Restart ---
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/thumb-1920-1296640.jpg
-exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
+
 
 # --- Appearance ---
 gaps inner 8
@@ -60,7 +61,6 @@ set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # --- Keybinds: Focus ---
 bindsym $mod+Left focus left
