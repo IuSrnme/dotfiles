@@ -31,7 +31,7 @@ cp ~/.config/fastfetch/bocchi.txt "$DOTFILES/.config/fastfetch"
 cp -r ~/.config/easyeffects/ "$DOTFILES/.config/easyeffects/"
 cp -r ~/.config/copyq/ "$DOTFILES/.config/copyq/"
 cp -r ~/.config/fcitx5/ "$DOTFILES/.config/fcitx5/"
-cp -r ~/.config/rofi/template/rounded-template.rasi "$DOTFILES/.config/rofi/"
+cp -r ~/.config/rofi/template/ "$DOTFILES/.config/rofi/"
 
 # Push to github
 cd "$DOTFILES"
