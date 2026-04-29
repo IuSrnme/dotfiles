@@ -2,7 +2,7 @@
 -- Neovim Config — sanny
 -- ============================================================
 
--- --- Leader key ---
+-- --- Leader ---
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
@@ -38,9 +38,8 @@ require("lazy").setup({
     "neovim/nvim-lspconfig",
     config = function()
       local lsp = require("lspconfig")
-      -- Add language servers here as needed
       -- lsp.pyright.setup({})
-      -- lsp.tsserver.setup({})
+      -- lsp.ts_ls.setup({})
     end
   },
 
@@ -56,9 +55,9 @@ require("lazy").setup({
       local cmp = require("cmp")
       cmp.setup({
         mapping = cmp.mapping.preset.insert({
-          ["<Tab>"] = cmp.mapping.select_next_item(),
-          ["<S-Tab>"] = cmp.mapping.select_prev_item(),
-          ["<CR>"] = cmp.mapping.confirm({ select = true }),
+          ["<Tab>"]     = cmp.mapping.select_next_item(),
+          ["<S-Tab>"]   = cmp.mapping.select_prev_item(),
+          ["<CR>"]      = cmp.mapping.confirm({ select = true }),
           ["<C-Space>"] = cmp.mapping.complete(),
         }),
         sources = {
@@ -77,10 +76,10 @@ require("lazy").setup({
       require("lualine").setup({
         options = {
           theme = {
-            normal   = { c = { fg = "#F7AABC", bg = "#1a1a1a" } },
-            insert   = { c = { fg = "#F0C060", bg = "#1a1a1a" } },
-            visual   = { c = { fg = "#7EB8D4", bg = "#1a1a1a" } },
-            replace  = { c = { fg = "#E94B67", bg = "#1a1a1a" } },
+            normal   = { c = { fg = "#f59bb1", bg = "#1a1a1a" } },
+            insert   = { c = { fg = "#e9d985", bg = "#1a1a1a" } },
+            visual   = { c = { fg = "#516aa1", bg = "#1a1a1a" } },
+            replace  = { c = { fg = "#c75255", bg = "#1a1a1a" } },
             inactive = { c = { fg = "#2d2d2d", bg = "#000000" } },
           },
           section_separators = "",
@@ -108,7 +107,6 @@ require("lazy").setup({
           color_devicons = true,
         }
       })
-      -- Keybinds
       local tb = require("telescope.builtin")
       vim.keymap.set("n", "<leader>ff", tb.find_files)
       vim.keymap.set("n", "<leader>fg", tb.live_grep)
@@ -131,9 +129,6 @@ vim.opt.termguicolors  = true
 vim.opt.scrolloff      = 8
 vim.opt.wrap           = false
 vim.opt.cursorline     = true
-
--- --- Leader key ---
-vim.g.mapleader = " "
 
 -- --- Keybinds ---
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
