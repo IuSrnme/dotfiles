@@ -1,27 +1,33 @@
+# ============================================================
+# dunstrc — sanny
+# ============================================================
+
+# --- Global ---
 [global]
     font = JetBrainsMono Nerd Font 10
-    frame_color = "#F7AABC"
-    separator_color = "#F7AABC"
+    frame_color = "#f59bb1"
+    separator_color = "#f59bb1"
     corner_radius = 10
     origin = top-right
-    offset = 10x10
+    offset = (10,10)
     padding = 8
     horizontal_padding = 10
 
-[base16_low]
-    msg_urgency = low
+# --- Urgency ---
+[urgency_low]
     background = "#000000"
-    foreground = "#F7AABC"
-    frame_color = "#f28baa"
+    foreground = "#516aa1"
+    frame_color = "#516aa1"
+    timeout = 5
 
-[base16_normal]
-    msg_urgency = normal
+[urgency_normal]
     background = "#000000"
-    foreground = "#F7AABC"
-    frame_color = "#F7AABC"
+    foreground = "#f59bb1"
+    frame_color = "#f59bb1"
+    timeout = 5
 
-[base16_critical]
-    msg_urgency = critical
+[urgency_critical]
     background = "#000000"
-    foreground = "#E94B67"
-    frame_color = "#E94B67"
+    foreground = "#c75255"
+    frame_color = "#c75255"
+    timeout = 0

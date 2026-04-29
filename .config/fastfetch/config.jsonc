@@ -1,12 +1,10 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
   "logo": {
-    "type": "file",
-    "source": "~/.config/fastfetch/bocchi.txt",
-    "color": {
-      "1": "#E87FA0",
-      "2": "#F5EDE8"
-    },
+    "type": "kitty-direct",
+    "source": "/home/san/.config/fastfetch/bocchiimg.png",
+    "width": 52,
+    "height": 24,
     "padding": {
       "right": 2
     }
