@@ -42,7 +42,7 @@ cp -r ~/.config/rofi/template/ "$DOTFILES/.config/rofi/"
 # --- Push ---
 cd "$DOTFILES"
 git add .
-git commit -m "$(hostname) - dotfiles update $(date '+%Y-%m-%d %H:%M')"
+git commit -m "$HOSTNAME - dotfiles update $(date '+%Y-%m-%d %H:%M')"
 git push
 
 echo "Dotfiles backed up and pushed."
