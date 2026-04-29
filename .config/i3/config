@@ -39,7 +39,7 @@ gaps top 40
 gaps left 8
 gaps right 8
 default_border pixel 2
-client.focused          #F7AABC #000000 #F7AABC #F7AABC #F7AABC
+client.focused          #f59bb1 #000000 #F7AABC #f59bb1 #f59bb1
 client.unfocused        #2d2d2d #000000 #F7AABC #2d2d2d #2d2d2d
 client.focused_inactive #2d2d2d #000000 #F7AABC #2d2d2d #2d2d2d
 
