@@ -11,8 +11,8 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # Aliases
 alias grep='grep --color=auto'
-alias update='sudo pacman -Syu'
-alias cleanup='sudo pacman -Sc'
+alias update='paru -Syu'
+alias cleanup='paru -Sc'
 alias cfg='cd ~/.config'
 alias dotfiles='~/dotfiles/backup.sh'
 
