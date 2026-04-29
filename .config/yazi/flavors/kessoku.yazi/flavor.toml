@@ -1,75 +1,90 @@
+# ============================================================
+# kessoku.yazi/flavor.toml — sanny
+# ============================================================
+
+# --- Manager ---
 [mgr]
 cwd = { fg = "#F7AABC" }
-find_keyword = { fg = "#F0C060", bold = true }
-find_position = { fg = "#E87FA0", bold = true }
-marker_copied = { fg = "#7EB8D4", bg = "#7EB8D4" }
-marker_cut = { fg = "#E94B67", bg = "#E94B67" }
-marker_marked = { fg = "#F0C060", bg = "#F0C060" }
-marker_selected = { fg = "#E87FA0", bg = "#E87FA0" }
+find_keyword  = { fg = "#e9d985", bold = true }
+find_position = { fg = "#f59bb1", bold = true }
+marker_copied  = { fg = "#516aa1", bg = "#516aa1" }
+marker_cut     = { fg = "#c75255", bg = "#c75255" }
+marker_marked  = { fg = "#e9d985", bg = "#e9d985" }
+marker_selected = { fg = "#f59bb1", bg = "#f59bb1" }
 border_symbol = "│"
-border_style = { fg = "#2d2d2d" }
+border_style  = { fg = "#2d2d2d" }
 
+# --- Tabs ---
 [tabs]
-active = { fg = "#000000", bg = "#E87FA0", bold = true }
+active   = { fg = "#000000", bg = "#f59bb1", bold = true }
 inactive = { fg = "#F7AABC", bg = "#1a1a1a" }
 
+# --- Mode ---
 [mode]
-normal_main = { fg = "#000000", bg = "#E87FA0", bold = true }
-normal_alt = { fg = "#E87FA0", bg = "#1a1a1a" }
-select_main = { fg = "#000000", bg = "#F0C060", bold = true }
-select_alt = { fg = "#F0C060", bg = "#1a1a1a" }
-unset_main = { fg = "#000000", bg = "#7EB8D4", bold = true }
-unset_alt = { fg = "#7EB8D4", bg = "#1a1a1a" }
+normal_main = { fg = "#000000", bg = "#f59bb1", bold = true }
+normal_alt  = { fg = "#f59bb1", bg = "#1a1a1a" }
+select_main = { fg = "#000000", bg = "#e9d985", bold = true }
+select_alt  = { fg = "#e9d985", bg = "#1a1a1a" }
+unset_main  = { fg = "#000000", bg = "#516aa1", bold = true }
+unset_alt   = { fg = "#516aa1", bg = "#1a1a1a" }
 
+# --- Status ---
 [status]
-perm_type = { fg = "#7EB8D4" }
-perm_read = { fg = "#F0C060" }
-perm_write = { fg = "#E94B67" }
-perm_exec = { fg = "#E87FA0" }
-perm_sep = { fg = "#2d2d2d" }
-progress_label = { fg = "#F7AABC", bold = true }
-progress_normal = { fg = "#E87FA0", bg = "#1a1a1a" }
-progress_error = { fg = "#E94B67", bg = "#1a1a1a" }
+perm_type   = { fg = "#516aa1" }
+perm_read   = { fg = "#e9d985" }
+perm_write  = { fg = "#c75255" }
+perm_exec   = { fg = "#f59bb1" }
+perm_sep    = { fg = "#2d2d2d" }
+progress_label  = { fg = "#F7AABC", bold = true }
+progress_normal = { fg = "#f59bb1", bg = "#1a1a1a" }
+progress_error  = { fg = "#c75255", bg = "#1a1a1a" }
 
+# --- Which ---
 [which]
 cols = 3
 mask = { bg = "#000000" }
-cand = { fg = "#E87FA0" }
+cand = { fg = "#f59bb1" }
 rest = { fg = "#2d2d2d" }
 desc = { fg = "#F7AABC" }
-separator = " → "
+separator       = " → "
 separator_style = { fg = "#2d2d2d" }
 
+# --- Input ---
 [input]
-border = { fg = "#E87FA0" }
-title = { fg = "#F7AABC" }
-value = { fg = "#F7AABC" }
+border   = { fg = "#f59bb1" }
+title    = { fg = "#F7AABC" }
+value    = { fg = "#F7AABC" }
 selected = { reversed = true }
 
+# --- Confirm ---
 [confirm]
-border = { fg = "#E87FA0" }
-title = { fg = "#F7AABC" }
+border = { fg = "#f59bb1" }
+title  = { fg = "#F7AABC" }
 
+# --- Pick ---
 [pick]
-border = { fg = "#E87FA0" }
-active = { fg = "#000000", bg = "#E87FA0" }
+border   = { fg = "#f59bb1" }
+active   = { fg = "#000000", bg = "#f59bb1" }
 inactive = { fg = "#F7AABC" }
 
+# --- Tasks ---
 [tasks]
-border = { fg = "#E87FA0" }
-title = { fg = "#F7AABC" }
+border = { fg = "#f59bb1" }
+title  = { fg = "#F7AABC" }
 
+# --- Notify ---
 [notify]
-title_info = { fg = "#7EB8D4" }
-title_warn = { fg = "#F0C060" }
-title_error = { fg = "#E94B67" }
+title_info  = { fg = "#516aa1" }
+title_warn  = { fg = "#e9d985" }
+title_error = { fg = "#c75255" }
 
+# --- Filetype ---
 [filetype]
 rules = [
-  { mime = "image/*", fg = "#E87FA0" },
-  { mime = "{audio,video}/*", fg = "#F0C060" },
-  { mime = "text/*", fg = "#F7AABC" },
-  { mime = "inode/empty", fg = "#2d2d2d" },
-  { url = "*", is = "orphan", fg = "#E94B67" },
-  { url = "*/", fg = "#7EB8D4" },
+  { mime = "image/*",        fg = "#f59bb1" },
+  { mime = "{audio,video}/*", fg = "#e9d985" },
+  { mime = "text/*",         fg = "#F7AABC" },
+  { mime = "inode/empty",    fg = "#2d2d2d" },
+  { url = "*", is = "orphan", fg = "#c75255" },
+  { url = "*/",              fg = "#516aa1" },
 ]
