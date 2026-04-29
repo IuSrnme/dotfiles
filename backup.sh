@@ -4,7 +4,7 @@ set -e
 
 DOTFILES=~/dotfiles
 
-mkdir -p "$DOTFILES"/.config/{i3,kitty,picom,polybar,rofi,dunst,fastfetch,nvim,btop,yazi/flavors,mpv,fontconfig,gtk-3.0}
+mkdir -p "$DOTFILES"/.config/{i3,kitty,picom,polybar,rofi,rofi/template,dunst,fastfetch,nvim,btop,yazi/flavors,mpv,fontconfig,gtk-3.0}
 
 # Copy configs
 cp ~/.config/i3/config "$DOTFILES/.config/i3/"
@@ -31,7 +31,7 @@ cp ~/.config/fastfetch/bocchi.txt "$DOTFILES/.config/fastfetch"
 cp -r ~/.config/easyeffects/ "$DOTFILES/.config/easyeffects/"
 cp -r ~/.config/copyq/ "$DOTFILES/.config/copyq/"
 cp -r ~/.config/fcitx5/ "$DOTFILES/.config/fcitx5/"
-cp -r ~/.config/rofi/template/rounded-template.rasi "$DOTFILES/.config/rofi/template"
+cp -r ~/.config/rofi/template/rounded-template.rasi "$DOTFILES/.config/rofi/"
 
 # Push to github
 cd "$DOTFILES"
