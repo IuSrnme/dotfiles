@@ -4,7 +4,7 @@ set -e
 
 DOTFILES=~/dotfiles
 
-mkdir -p "$DOTFILES/.config/{i3,kitty,picom,polybar,rofi,dunst,fastfetch,nvim,btop,yazi/flavors,mpv,fontconfig,gtk-3.0}"
+mkdir -p "$DOTFILES"/.config/{i3,kitty,picom,polybar,rofi,dunst,fastfetch,nvim,btop,yazi/flavors,mpv,fontconfig,gtk-3.0}
 
 # Copy configs
 cp ~/.config/i3/config "$DOTFILES/.config/i3/"
