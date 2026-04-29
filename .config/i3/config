@@ -10,7 +10,7 @@ tiling_drag modifier titlebar
 
 # --- Autostart ---
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 000000 --ring-color=E87FA0 --keyhl-color=F7AABC --bshl-color=E94B67 --inside-color=00000000 --separator-color=00000000 --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 000000 --ring-color=f59bb1 --keyhl-color=F7AABC --bshl-color=c75255 --inside-color=00000000 --separator-color=00000000 --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id easyeffects --gapplication-service
 exec --no-startup-id xsetroot -cursor_name left_ptr
