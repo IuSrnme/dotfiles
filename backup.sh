@@ -1,12 +1,18 @@
 #!/bin/bash
+
+# ============================================================
+# Backup File — sanny
+# ============================================================
+
 set -e
-# Kessoku dotfiles backup script
+
+# --- Backup Script ---
 
 DOTFILES=~/dotfiles
 
 mkdir -p "$DOTFILES"/.config/{i3,kitty,picom,polybar,rofi,rofi/template,dunst,fastfetch,nvim,btop,yazi/flavors,mpv,fontconfig,gtk-3.0}
 
-# Copy configs
+# --- Copy Config ---
 cp ~/.config/i3/config "$DOTFILES/.config/i3/"
 cp ~/.config/kitty/kitty.conf "$DOTFILES/.config/kitty/"
 cp ~/.config/picom/picom.conf "$DOTFILES/.config/picom/"
@@ -33,7 +39,7 @@ cp -r ~/.config/copyq/ "$DOTFILES/.config/copyq/"
 cp -r ~/.config/fcitx5/ "$DOTFILES/.config/fcitx5/"
 cp -r ~/.config/rofi/template/ "$DOTFILES/.config/rofi/"
 
-# Push to github
+# --- Push ---
 cd "$DOTFILES"
 git add .
 git commit -m "$(hostname) - dotfiles update $(date '+%Y-%m-%d %H:%M')"
